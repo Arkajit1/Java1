@@ -1,0 +1,343 @@
+<html>
+    <head>
+        <title>user add</title>
+  <link href="site.css" rel="stylesheet">
+  <script>
+function ValidateEmail()  
+{  
+var x = document.forms["myForm"]["fname13"].value;
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+if(x.match(mailformat))  
+{  
+ 
+return true;  
+}  
+else  
+{  
+alert("You have entered an invalid email address!"); 
+return false;  
+}  
+}  
+
+
+//Checking whether the fields are empty or not on pressing the submit button
+
+
+function validateForm() {
+    var x = document.forms["myForm"]["fname1"].value;
+    var y = document.forms["myForm"]["fname2"].value;
+    
+    var z = document.forms["myForm"]["fname13"].value;
+
+if((x==null || x=="")&&(y==null || y=="")&&(z==null || z=="")) 
+{
+        alert("mandatory fields are blank");
+        document.forms["myForm"]["fname1"].focus();//to highlight this field
+        return false;
+        
+    }
+   
+ if (x==null || x=="") {
+        alert("username missing");
+        document.forms["myForm"]["fname1"].focus();//to highlight this field
+        return false;
+        
+    }
+
+    if (y==null || y=="") {
+        alert("Password must be filled out");
+         document.forms["myForm"]["fname2"].focus();
+        return false;
+       
+    }
+   if (z==null || z=="") {
+        alert("Emailid  must be filled out");
+         document.forms["myForm"]["fname13"].focus();
+        return false;
+       
+    }
+
+}
+
+
+
+
+//Checking whether a field contains number or not when the field loses its focus
+
+//function blurred()
+
+ // {var y = document.forms["myForm"]["fname2"].value;
+ // if(isNaN(y)==true)
+  //{
+ //   alert("Plz enter a valid password");
+  //  document.forms["myForm"]["fname2"].focus();}}
+  
+
+
+
+
+//Displaying something when a field gains focus
+
+function focussing()
+{
+  var y = document.forms["myForm"]["fname2"].value;
+  
+    alert("Plz enter your Password");
+    
+  
+}
+
+
+
+//Displaying a message while reseting
+
+function resetting()
+{
+  alert("Refreshing every field");
+}
+
+
+</script>
+
+
+</head>
+
+    <body>
+        <table>
+          <tr>
+              <td>
+                  <ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  
+  <li class="dropdown">
+    <a class="dropbtn">Services</a>
+    <div class="dropdown-content">
+      <a href="train.html">Train</a>
+      <a href="flight.html">Flight</a>
+      <a href="hotel.html">Hotel</a>
+    </div>
+  </li>
+  
+   <li class="dropdown">
+    <a class="dropbtn">Package</a>
+    <div class="dropdown-content">
+      <a href="national.html">National</a>
+      <a href="international.html">International</a>
+    </div>
+  </li>
+   
+  
+  <li><a class="active" href="offer.html">Offer</a></li>
+  
+   <li><a class="active" href="index.html">Logout</a></li>
+  
+ 
+    
+    
+</ul>
+
+              </td>
+          </tr>
+      </table>
+      
+
+
+
+<table>
+
+<tr>
+    <td>
+  
+        <ul>
+  <li class="dropdown">
+    <a class="dropbtn">User</a>
+    <div class="dropdown-content">
+      <a href="useradd.html">User Add</a>
+      <a href="userdel.html">User Delete</a>
+      <a href="usermod.html">User Edit</a>
+    </div>
+  </li>
+  
+   <li class="dropdown">
+    <a class="dropbtn">Hotel</a>
+    <div class="dropdown-content">
+      <a href="hoteladd.html">Hotel Add</a>
+      <a href="hoteldel.html">Hotel Delete</a>
+      <a href="hotelmod.html">Hotel Edit</a>
+    </div>
+  </li>
+  
+ <li class="dropdown">
+    <a class="dropbtn">Flight</a>
+    <div class="dropdown-content">
+      <a href="flightadd.html">Flight Add</a>
+      <a href="flightdel.html">Flight Delete</a>
+      <a href="flightmod.html">Flight Edit</a>
+    </div>
+  </li> 
+  <li class="dropdown">
+    <a class="dropbtn">Train</a>
+    <div class="dropdown-content">
+      <a href="trainadd.html">Train Add</a>
+      <a href="traindel.html">Train Delete</a>
+      <a href="trainmod.html">Train Edit</a>
+    </div>
+  </li>  
+  <li class="dropdown">
+    <a class="dropbtn">View Status</a>
+    <div class="dropdown-content">
+      <a href="trainstat.html">Train</a>
+      <a href="flightstat.html">Flight</a>
+      <a href="hotelstat.html">Hotel</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a class="dropbtn">Generate Payment</a>
+    <div class="dropdown-content">
+      <a href="trainpm.html">Train</a>
+      <a href="flightpm.html">Flight</a>
+      <a href="hotelpm.html">Hotel</a>
+    </div>
+  </li>
+ 
+   <li><a class="active" href="fbrcv.html">Feedback</a></li> 
+    
+  </ul></td>
+
+    
+</tr>
+</table>
+
+        <form name="myForm" action="useradd" onsubmit="return validateForm()" 
+method="post" onreset="resetting()">
+        <h1>
+            USER ADD
+            </h1>
+            <center><table>
+                <tr>
+                <td>Username </td>
+               <td><input type="text" name="fname1"></td>
+            </tr>
+            <tr>
+                <td>Password </td>
+               <td><input type="password" name="fname2"  onblur="blurred()"></td>
+            </tr>
+            <tr>
+                <td>Name</td>
+               <td><input type="text" name="fname3"></td>
+            </tr>
+            <tr>
+                <td>Middle Name </td>
+               <td><input type="text" name="fname4"></td>
+            </tr>
+            <tr>
+                <td>Last Name </td>
+               <td><input type="text" name="fname5"></td>
+            </tr>
+            <tr>
+            <td>Birthdate</td>
+            <td>
+                    <select name="fname6">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+    <option value="25">25</option>
+    <option value="26">26</option>
+    <option value="27">27</option>
+    <option value="28">28</option>
+    <option value="29">29</option>
+    <option value="30">30</option>
+   <option value="31">31</option>
+   </select>
+<select name="fname7">
+    <option value="Jan">January</option>
+    <option value="Feb">February</option>
+    <option value="Mar">March</option>
+    <option value="Apr">April</option>
+    <option value="May">May</option>
+    <option value="Jun">June</option>
+    <option value="Jul">July</option>
+    <option value="Aug">August</option>
+    <option value="Sep">September</option>
+    <option value="Oct">October</option>
+    <option value="Nov">November</option>
+    <option value="Dec">December</option>
+
+</select>
+<select name="fname8"><option value="1996">1996</option>
+</select></td>
+            </tr>
+            
+             <tr>
+                <td>Gender</td>
+               <td>
+                <input type="radio" name="fname9" value="male" checked> Male<br>
+  <input type="radio" name="fname9" value="female"> Female<br>
+  <input type="radio" name="fname9" value="other"> Other
+  </td>
+            </tr>
+             <tr>
+                <td>Address</td>
+               <td><input type="text" name="fname10"></td>
+               
+            </tr>
+            <tr>
+                <td>City</td>
+               <td><input type="text" name="fname11"></td>
+               
+            </tr>
+            <tr>
+            <td>Pincode</td>
+               <td><input type="text" name="fname12"></td>
+               </tr>
+               
+               <tr> 
+         <td>Email</td>
+               <td><input type="text" name="fname13"  onblur="ValidateEmail()"></td>
+               </tr>
+               <tr>
+                   <td> SECURITY QUESTION :-&nbsp;&nbsp;<select name="fname14">
+                <option value="q1">what is your pet's name?</option>
+                <option value="q1">what is your pet's name?</option>
+                <option value="q1">what is your favourite sports?</option>
+                <option value="q1">what is your favorite game?</option>
+                       </select></td>
+               
+               <td>
+            your ans<input type="text" name="fname15">
+            
+                   </td></tr>
+           
+               <tr>
+                  <td colspan="2" align="center"><input type="submit" value=" Add "></td>
+               </tr>
+               
+               
+            
+    
+        
+</table>        </form>
+</center>
+    </body>
+</html>

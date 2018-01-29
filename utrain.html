@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    font-size: 16px;
+    background-color: skyblue;
+    color: #696969;
+    padding: 3px;
+}
+
+#main {
+    padding: 5px;
+    padding-left:  15px;
+    padding-right: 15px;
+    background-color: #ffffff;
+    border-radius: 0 0 5px 5px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    border-bottom: 3px solid #cc9900;
+    color: #996600;
+    font-size: 30px;
+}
+table {
+    width:100%;
+}
+
+table, th , td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+th {
+    text-align: left;
+}
+
+table tr:nth-child(odd) {
+    background-color: cyan;
+}
+table tr:nth-child(even) {
+    background-color: skyblue;
+} 
+
+form {
+               
+}
+.search {
+                padding:8px 15px;
+                background:rgba(50, 50, 50, 0.2);
+                border:0px solid #dbdbdb;
+}
+.button {
+                position:relative;
+                padding:6px 15px;
+                left:-8px;
+                border:2px solid #207cca;
+                background-color:#207cca;
+                color:#fafafa;
+}
+.button:hover  {
+                background-color:#fafafa;
+                color:#207cca;
+}
+li {
+  color: red; /* bullet color */
+}
+li span {
+  color: black; /* text color */
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: wheat;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: cyan;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: wheat;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color:cyan}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+    </style>
+</head>
+
+<body background="t.JPG">
+<table>
+<tr>
+    <td><marquee bgcolor="black">
+            <font color="yellow" font size="14" style="font-family:Brush Script Std;">Welcome to LA FLAMINGO INTERNATIONAL <img src="r.jpg" width="30" height="30">Train Service</font></marquee></td>
+</tr>
+</table>
+     <table>
+          <tr>
+              <td>
+                  <ul>
+  <li><a class="active" href="uindex.html">Home</a></li>
+  
+  <li class="dropdown">
+    <a class="dropbtn">Services</a>
+    <div class="dropdown-content">
+      <a href="utrain.html">Train</a>
+      <a href="uflight.html">Flight</a>
+      <a href="uhotel.html">Hotel</a>
+    </div>
+  </li>
+  
+   <li class="dropdown">
+    <a class="dropbtn">Package</a>
+    <div class="dropdown-content">
+      <a href="unational.html">National</a>
+      <a href="uinternational.html">International</a>
+    </div>
+  </li>
+  
+  <li><a class="active" href="uoffer.html">Offer</a></li>
+  <li><a class="active" href="feedback.html">feedback</a></li>
+   <li><a class="active" href="login.html">Logout</a></li>
+    
+    
+    
+</ul>
+
+              </td>
+          </tr>
+      </table>
+      
+   
+    
+     <table width="100%">
+        <tr>
+            <td><a href="rail.html">PNR Status</a></td>
+            <td><a href="rail.html">Reserved Train between Important Station</a></td>
+            <td><a href="rail.html">Seat Availability</a></td>
+            <td><a href="rail.html">Fare Enquiry<a href="rail.html"></td>
+                        <td><a href="rail.html">Internet Reservation</a></td>
+                         <td><a href="trainbook.html">Booking through our Site</a></td>
+          </tr>
+    </table>
+    <form method="post" action="trainsearch">
+            <table width="100%">
+        <tr>
+            
+                
+                
+                <td width="16%">Train Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="t1"></td>
+                  <td width="16%">Select ORIGIN:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="t2">
+    <option value="delhi">Delhi</option>
+    <option value="kolkata">Kolkata</option>    
+     <option value="mumbai">Mumbai</option>
+     
+                </select></td>
+                <td width="16%">Select DESTINATION:&nbsp;&nbsp;<select name="t3">
+    <option value="delhi">Delhi</option>
+    <option value="kolkata">Kolkata</option>    
+     <option value="mumbai">Mumbai</option>
+     
+                </select></td>
+                <td width="16%">Depart Date:&nbsp;&nbsp;
+                <select>
+    <option value="a">1</option>
+    <option value="a">2</option>
+    <option value="a">3</option>
+    <option value="a">4</option>
+    <option value="a">5</option>
+    <option value="a">6</option>
+    <option value="a">7</option>
+    <option value="a">8</option>
+    <option value="a">9</option>
+    <option value="a">10</option>
+    <option value="a">11</option>
+    <option value="a">12</option>
+    <option value="a">13</option>
+    <option value="a">14</option>
+    <option value="a">15</option>
+    <option value="a">16</option>
+    <option value="a">17</option>
+    <option value="a">18</option>
+    <option value="a">19</option>
+    <option value="a">20</option>
+    <option value="a">21</option>
+    <option value="a">22</option>
+    <option value="a">23</option>
+    <option value="a">24</option>
+    <option value="a">25</option>
+    <option value="a">26</option>
+    <option value="a">27</option>
+    <option value="a">28</option>
+    <option value="a">29</option>
+    <option value="a">30</option>
+   <option value="a">31</option>
+   </select>
+<select>
+    <option value="">January</option>
+    <option value="">February</option>
+    <option value="">March</option>
+    <option value="">April</option>
+    <option value="">May</option>
+    <option value="">June</option>
+    <option value="">July</option>
+    <option value="">August</option>
+    <option value="">September</option>
+    <option value="">October</option>
+    <option value="">November</option>
+    <option value="">December</option>
+
+</select>
+<select><option value="">2016</option>
+</select>
+                </td>
+                <td width="16%">Return Date:&nbsp;&nbsp;
+              <select>
+    <option value="a">1</option>
+    <option value="a">2</option>
+    <option value="a">3</option>
+    <option value="a">4</option>
+    <option value="a">5</option>
+    <option value="a">6</option>
+    <option value="a">7</option>
+    <option value="a">8</option>
+    <option value="a">9</option>
+    <option value="a">10</option>
+    <option value="a">11</option>
+    <option value="a">12</option>
+    <option value="a">13</option>
+    <option value="a">14</option>
+    <option value="a">15</option>
+    <option value="a">16</option>
+    <option value="a">17</option>
+    <option value="a">18</option>
+    <option value="a">19</option>
+    <option value="a">20</option>
+    <option value="a">21</option>
+    <option value="a">22</option>
+    <option value="a">23</option>
+    <option value="a">24</option>
+    <option value="a">25</option>
+    <option value="a">26</option>
+    <option value="a">27</option>
+    <option value="a">28</option>
+    <option value="a">29</option>
+    <option value="a">30</option>
+   <option value="a">31</option>
+   </select>
+<select>
+    <option value="">January</option>
+    <option value="">February</option>
+    <option value="">March</option>
+    <option value="">April</option>
+    <option value="">May</option>
+    <option value="">June</option>
+    <option value="">July</option>
+    <option value="">August</option>
+    <option value="">September</option>
+    <option value="">October</option>
+    <option value="">November</option>
+    <option value="">December</option>
+
+</select>
+<select><option value="2016">2016</option>
+</select>    
+                </td>
+                <td width="14%">Traveller<input type="number">
+                
+</td>
+<td width="14%">
+                <select>
+    <option value="ac3">AC-III</option>
+    <option value="ac2">AC -II</option>    
+     <option value="sl">SLEEPER</option>
+     <option value="gn">GENERAL</option>
+                </select>
+                </td>
+           <td width="14%">
+           
+                                <input type="submit" value="Search">    
+            </td>
+            
+        </tr>
+            </table>    </form> 
+
+           
+                               
+
+<table width="20%">
+    <th><center>Service</center></th><tr>
+        
+            
+<tr><td><a href="rail.html">Mobile Ticketing Services</a></td></tr>
+<tr><td><a href="rail.html">Registration of Rail/Coach on full Tariff</a></td></tr>
+<tr><td><a href="rail.html">Availability on major stations</a></td></tr>
+<tr><td><a href="rail.html">Reserved Train Schedule</a> </td></tr>
+<tr><td><a href="rail.html">SMS Service</a></td></tr>
+            
+</table>
+    <br><br>
+         <table width="20%">
+             <th><center>Information</center></th><tr>
+       
+         <tr><td><a href="rail.html">Catering Charges</a></td></tr>
+         <tr><td><a href="rail.html">View Codes</a></td></tr>
+         <tr><td><a href="rail.html">Train at a glance</a></td></tr>
+         <tr><td><a href="rail.html">Rules</a></td></tr>
+         <tr><td><a href="rail.html">Tatkal Service</a></td></tr>
+           
+</table>
+         
+      
+      
+      
+  <form><table width="100%"><tr>
+                <td width="20%"><font color="Brown" font size="6" style="font-family:Brush Script Std;">Train Name</font> </td>
+                <td width="20%"><font color="Brown" font size="6" style="font-family:Brush Script Std;">Train Source</font> </td>
+                <td width="20%"><font color="Brown" font size="6" style="font-family:Brush Script Std;">Source Dep Time</font> </td>
+                <td width="20%"><font color="Brown" font size="6" style="font-family:Brush Script Std;">Train Dest</font> </td>
+                <td width="20%"><font color="Brown" font size="6" style="font-family:Brush Script Std;">Destination Arrival Time</font> </td>
+            </tr></table></form>
+    <form method="post" action="trainr"><table width="100%"><tr>
+                <td width="20%"><font color="Green" font size="6" style="font-family:Brush Script Std;">Rajdhani</font> </td>
+                <td width="20%"><font color="Green" font size="6" style="font-family:Brush Script Std;">Delhi</font> </td>
+                <td width="20%"><font color="Green" font size="6" style="font-family:Brush Script Std;"> Tue 20:00</font> </td>
+                <td width="20%"><font color="Green" font size="6" style="font-family:Brush Script Std;">Kolkata</font> </td>
+                <td width="20%"><font color="Green" font size="6" style="font-family:Brush Script Std;">Wed 21:00</font> </td>
+                <td width="20%"><input type="submit" value="book"></td>
+            </tr></table></form>
+    <form method="post" action="trains"><table width="100%"><tr>
+                <td width="20%"><font color="Green" font size="6" style="font-family:Brush Script Std;">Shantikunj</font> </td>
+                <td width="20%"><font color="Green" font size="6" style="font-family:Brush Script Std;">Jabalpur</font> </td>
+                <td width="20%"><font color="Green" font size="6" style="font-family:Brush Script Std;">Tue 04:30</font> </td>
+                <td width="20%"><font color="Green" font size="6" style="font-family:Brush Script Std;">Howrah</font> </td>
+                <td width="20%"><font color="Green" font size="6" style="font-family:Brush Script Std;">Tue 21:55</font> </td>
+                <td width="20%"><input type="submit" value="book"></td>
+            </tr></table></form>    
+      
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+     <footer><center><table width="70%">
+<tr>
+<td>
+<a href="index.html"><center>Home</center></a>
+</td>
+<td>
+<a href="about.html"><center>About us</center>
+</a></td>
+<td>
+<a href="contact.html"><Center>Contact us</center></a>
+</td>
+</table>
+</center></footer>   
+
+</body>
+</html>

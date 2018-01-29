@@ -1,0 +1,422 @@
+<html><head><title>Flight</title>
+        <style>
+    body {
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    font-size: 16px;
+    background-color: skyblue;
+    color: #696969;
+    padding: 3px;
+}
+
+#main {
+    padding: 5px;
+    padding-left:  15px;
+    padding-right: 15px;
+    background-color: #ffffff;
+    border-radius: 0 0 5px 5px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    border-bottom: 3px solid #cc9900;
+    color: #996600;
+    font-size: 30px;
+}
+
+table, th , td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+th {
+    text-align: left;
+}
+
+table tr:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+    background-color: #ffffff;
+} 
+
+
+.search {
+                padding:8px 15px;
+                background:rgba(50, 50, 50, 0.2);
+                border:0px solid #dbdbdb;
+}
+.button {
+                position:relative;
+                padding:6px 15px;
+                left:-8px;
+                border:2px solid #207cca;
+                background-color:#207cca;
+                color:#fafafa;
+}
+.button:hover  {
+                background-color:#fafafa;
+                color:#207cca;
+}
+li {
+  color: red; /* bullet color */
+}
+li span {
+  color: black; /* text color */
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: wheat;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: cyan;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: wheat;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color:cyan}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+   </style>
+    </head>
+<body>
+   <table>
+<tr>
+    <td><marquee bgcolor="black">
+            <font color="yellow" font size="14" style="font-family:Brush Script Std;">Welcome to LA FLAMINGO INTERNATIONAL <img src="r.jpg" width="30" height="30"></font></marquee></td>
+</tr>
+</table>
+    
+         
+
+      <table width="100%">
+          <tr>
+              <td>
+                  <ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  
+  <li class="dropdown">
+    <a class="dropbtn">Services</a>
+    <div class="dropdown-content">
+      <a href="train.html">Train</a>
+      <a href="flight.html">Flight</a>
+      <a href="hotel.html">Flight</a>
+    </div>
+  </li>
+  
+   <li class="dropdown">
+    <a class="dropbtn">Package</a>
+    <div class="dropdown-content">
+      <a href="national.html">National</a>
+      <a href="international.html">International</a>
+    </div>
+  </li>
+  
+  <li><a class="active" href="offer.html">Offer</a></li>
+  
+   <li><a class="active" href="index.html">Logout</a></li>
+   
+    
+    
+    
+</ul>
+
+              </td>
+          </tr>
+      </table>
+      
+
+    
+    <table><tr><td><img src="3.jpg" height="260" width="1340"></td></tr></table>
+    
+        <form method="post" action="flightsearch">
+            <table>
+        <tr>
+            
+                
+                
+                <td width="16%">Select ORIGIN:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="t1">
+    <option value="delhi">Delhi</option>
+    <option value="kolkata">Kolkata</option>    
+     <option value="mumbai">Mumbai</option>
+     
+                </select></td>
+                <td width="16%">Select DESTINATION:&nbsp;&nbsp;<select name="t2">
+    <option value="delhi">Delhi</option>
+    <option value="kolkata">Kolkata</option>    
+     <option value="mumbai">Mumbai</option>
+     
+                </select></td>
+                
+                <td width="16%">Depart Date:&nbsp;&nbsp;
+                <select>
+    <option value="a">1</option>
+    <option value="a">2</option>
+    <option value="a">3</option>
+    <option value="a">4</option>
+    <option value="a">5</option>
+    <option value="a">6</option>
+    <option value="a">7</option>
+    <option value="a">8</option>
+    <option value="a">9</option>
+    <option value="a">10</option>
+    <option value="a">11</option>
+    <option value="a">12</option>
+    <option value="a">13</option>
+    <option value="a">14</option>
+    <option value="a">15</option>
+    <option value="a">16</option>
+    <option value="a">17</option>
+    <option value="a">18</option>
+    <option value="a">19</option>
+    <option value="a">20</option>
+    <option value="a">21</option>
+    <option value="a">22</option>
+    <option value="a">23</option>
+    <option value="a">24</option>
+    <option value="a">25</option>
+    <option value="a">26</option>
+    <option value="a">27</option>
+    <option value="a">28</option>
+    <option value="a">29</option>
+    <option value="a">30</option>
+   <option value="a">31</option>
+   </select>
+<select>
+    <option value="">January</option>
+    <option value="">February</option>
+    <option value="">March</option>
+    <option value="">April</option>
+    <option value="">May</option>
+    <option value="">June</option>
+    <option value="">July</option>
+    <option value="">August</option>
+    <option value="">September</option>
+    <option value="">October</option>
+    <option value="">November</option>
+    <option value="">December</option>
+
+</select>
+<select><option value="">2016</option>
+</select>
+                </td>
+                <td width="16%">Return Date:&nbsp;&nbsp;
+              <select>
+    <option value="a">1</option>
+    <option value="a">2</option>
+    <option value="a">3</option>
+    <option value="a">4</option>
+    <option value="a">5</option>
+    <option value="a">6</option>
+    <option value="a">7</option>
+    <option value="a">8</option>
+    <option value="a">9</option>
+    <option value="a">10</option>
+    <option value="a">11</option>
+    <option value="a">12</option>
+    <option value="a">13</option>
+    <option value="a">14</option>
+    <option value="a">15</option>
+    <option value="a">16</option>
+    <option value="a">17</option>
+    <option value="a">18</option>
+    <option value="a">19</option>
+    <option value="a">20</option>
+    <option value="a">21</option>
+    <option value="a">22</option>
+    <option value="a">23</option>
+    <option value="a">24</option>
+    <option value="a">25</option>
+    <option value="a">26</option>
+    <option value="a">27</option>
+    <option value="a">28</option>
+    <option value="a">29</option>
+    <option value="a">30</option>
+   <option value="a">31</option>
+   </select>
+<select>
+    <option value="">January</option>
+    <option value="">February</option>
+    <option value="">March</option>
+    <option value="">April</option>
+    <option value="">May</option>
+    <option value="">June</option>
+    <option value="">July</option>
+    <option value="">August</option>
+    <option value="">September</option>
+    <option value="">October</option>
+    <option value="">November</option>
+    <option value="">December</option>
+
+</select>
+<select><option value="2016">2016</option>
+</select> 
+                    
+                </td>
+                <td width="16%" >Traveller<input type="number" min="0" name="n15">
+                
+</td>
+           <td width="20%">
+           
+                                <input type="submit" value="Search">    
+            </td>
+            
+        </tr>
+            </table>    </form> 
+
+            <table><tr>
+                
+                <td>
+                    
+  <input type="radio" name="way" value="One" checked> One Way
+  <input type="radio" name="way" value="Multi"> Multicity
+  <input type="radio" name="way" value="Round"> Round Trip
+                <td>
+                <select>
+    <option value="p">Premium Economy</option>
+    <option value="b">Business</option>    
+     <option value="f">First Class</option>
+     <option value="e">Economy</option>
+                </select>
+                </td>
+                <td>
+                    <select>
+                        <option value="">Preferred AirLine</option>
+    <option value="Kingfisher">Kingfisher</option>
+    <option value="JetAirways">SpiceJet</option>    
+     <option value="Indigo">Indigo</option>
+     <option value="AirIndia">Air India</option> 
+     
+                </select>
+                </td>
+                <td>
+                <font color="Brown" font size="6" style="font-family:Brush Script Std;">Try new improved search box</font> 
+                </td></tr>
+            </table>
+    <table>
+        <tr>
+            <th>
+                Book a flight and save on hotels!
+            </th>
+            <td>
+            Good news for fliers! Book any domestic or international flight and earn up to Rs.1,500  or Rs 5,000  respectively. Redeem this  on hotel bookings and get up to 35% discount. Hurry! Book now.    
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th>
+                About the Offer
+            </th>
+            <td>
+                Here how the offer works
+                <table>
+        <tr>
+            <th>
+                Product
+            </th>
+            <th>
+                Offer on One way
+            </th>
+            <th>Offer on Round Trip</th></tr>
+        <tr><td>
+           Domestic Flight  
+            </td>
+             <td>
+           Rs&nbsp;750 Off
+            </td> <td>
+          Rs&nbsp;1500 Off
+            </td>
+            
+        </tr>
+        <tr><td>
+           International Flight  
+            </td>
+             <td>
+           Rs&nbsp;2750 Off
+            </td> <td>
+           Rs&nbsp;5550 Off
+            </td>
+            
+        </tr>
+    </table>
+            </td>
+        </tr>
+    </table>
+    <form><table width="100%"><tr>
+                <td width="20%"><font color="Brown" font size="6" style="font-family:Brush Script Std;">Departure</font> </td>
+                <td width="20%"><font color="Brown" font size="6" style="font-family:Brush Script Std;">Destination</font> </td>
+                <td width="20%"><font color="Brown" font size="6" style="font-family:Brush Script Std;">Agency</font> </td>
+                <td width="20%"><font color="Brown" font size="6" style="font-family:Brush Script Std;">Actual Fare</font> </td>
+                <td width="20%"><font color="Brown" font size="6" style="font-family:Brush Script Std;">Ourfare</font> </td>
+            </tr></table></form>
+    <form method="post" action="flightkd"><table width="100%"><tr>
+                <td width="20%"><font color="Green" font size="6" style="font-family:Brush Script Std;">Kolkata</font> </td>
+                <td width="20%"><font color="Green" font size="6" style="font-family:Brush Script Std;">Delhi</font> </td>
+                <td width="20%"><font color="Green" font size="6" style="font-family:Brush Script Std;">JetAirways</font> </td>
+                <td width="20%"><font color="Green" font size="6" style="font-family:Brush Script Std;">10000</font> </td>
+                <td width="20%"><font color="Green" font size="6" style="font-family:Brush Script Std;">8000</font> </td>
+                <td width="20%"><input type="submit" value="book"></td>
+            </tr></table></form>
+    <form method="post" action="flightmb"><table width="100%"><tr>
+                <td width="20%"><font color="Green" font size="6" style="font-family:Brush Script Std;">Mumbai</font> </td>
+                <td width="20%"><font color="Green" font size="6" style="font-family:Brush Script Std;">Bangalore</font> </td>
+                <td width="20%"><font color="Green" font size="6" style="font-family:Brush Script Std;">Spicejet</font> </td>
+                <td width="20%"><font color="Green" font size="6" style="font-family:Brush Script Std;">6000</font> </td>
+                <td width="20%"><font color="Green" font size="6" style="font-family:Brush Script Std;">5000</font> </td>
+                <td width="20%"><input type="submit" value="book"></td>
+            </tr></table></form>
+    
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <center><table>
+<tr>
+<td>
+<a href="index.html"><center>Home</center></a>
+</td>
+<td>
+<a href="about.html"><center>About us</center>
+</a></td>
+<td>
+<a href="contact.html"><Center>Contact us</center></a>
+</td>
+</table>
+</center>
+</body>
+</html>

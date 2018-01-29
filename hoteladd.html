@@ -1,0 +1,283 @@
+<html>
+    <head>
+          <title>hotel manage</title>
+           <link href="site.css" rel="stylesheet">
+     </head>
+     <body>
+     <div id="main">
+  <table>
+<tr>
+    <td><marquee bgcolor="black">
+            <font color="yellow" font size="14" style="font-family:Brush Script Std;">LA FLAMINGO INTERNATIONAL  <img src="r.jpg" width="30" height="30">Admin Page for Adding/Deleting  hotel</font></marquee></td>
+</tr>
+</table>
+                     <table><tr><td>
+                         <center><font color="brown" font size="12" style="font-family:Brush Script Std;">HOTEL ADD</font></center>
+                 </td></tr></table>
+        <table>
+          <tr>
+              <td>
+                  <ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  
+  <li class="dropdown">
+    <a class="dropbtn">Services</a>
+    <div class="dropdown-content">
+      <a href="train.html">Train</a>
+      <a href="flight.html">Flight</a>
+      <a href="hotel.html">Hotel</a>
+    </div>
+  </li>
+  
+   <li class="dropdown">
+    <a class="dropbtn">Package</a>
+    <div class="dropdown-content">
+      <a href="national.html">National</a>
+      <a href="international.html">International</a>
+    </div>
+  </li>
+   
+  
+  <li><a class="active" href="offer.html">Offer</a></li>
+   <li><a class="active" href="index.html">Logout</a></li>
+  
+ 
+    
+    
+</ul>
+
+              </td>
+          </tr>
+      </table>
+      
+
+
+
+<table>
+
+<tr>
+    <td>
+  
+        <ul>
+  <li class="dropdown">
+    <a class="dropbtn">User</a>
+    <div class="dropdown-content">
+      <a href="useradd.html">User Add</a>
+      <a href="userdel.html">User Delete</a>
+      <a href="usermod.html">User Edit</a>
+    </div>
+  </li>
+  
+   <li class="dropdown">
+    <a class="dropbtn">Hotel</a>
+    <div class="dropdown-content">
+      <a href="hoteladd.html">Hotel Add</a>
+      <a href="hoteldel.html">Hotel Delete</a>
+      <a href="hotelmod.html">Hotel Edit</a>
+    </div>
+  </li>
+  
+ <li class="dropdown">
+    <a class="dropbtn">Flight</a>
+    <div class="dropdown-content">
+      <a href="flightadd.html">Flight Add</a>
+      <a href="flightdel.html">Flight Delete</a>
+      <a href="flightmod.html">Flight Edit</a>
+    </div>
+  </li> 
+  <li class="dropdown">
+    <a class="dropbtn">Train</a>
+    <div class="dropdown-content">
+      <a href="trainadd.html">Train Add</a>
+      <a href="traindel.html">Train Delete</a>
+      <a href="trainmod.html">Train Edit</a>
+    </div>
+  </li>  
+  <li class="dropdown">
+    <a class="dropbtn">View Status</a>
+    <div class="dropdown-content">
+      <a href="trainstat.html">Train</a>
+      <a href="flightstat.html">Flight</a>
+      <a href="hotelstat.html">Hotel</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a class="dropbtn">Generate Payment</a>
+    <div class="dropdown-content">
+      <a href="trainpm.html">Train</a>
+      <a href="flightpm.html">Flight</a>
+      <a href="hotelpm.html">Hotel</a>
+    </div>
+  </li>
+ 
+   <li><a class="active" href="fbrcv.html">Feedback</a></li> 
+    
+  </ul></td>
+
+    
+</tr>
+</table>
+
+
+                <form method="post" action="hoteladd">
+                    
+
+             <table>
+                 
+                     <tr>
+                         <td ><font face="Book Antiqua" size="4" color="Green">Hotel Id :</font></td>
+                         <td align="center" ><input type="text" name="n1"></td>
+                      </tr>   
+                      <tr>
+                          <td ><font face="Book Antiqua" size="4" color="Green">Agency: </font></td>
+                         <td align="center"><select name="n2">
+                                            <option value="None">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option> 
+                                            <option value="Kingfisher">Taj</option> 
+                                            <option value="JetAirways">Royal Madison</option> 
+                                            <option value="Indigo">Park</option> 
+                                            <option value="AirIndia">La Bonjour</option> </select>
+                      </tr>
+                       <tr>
+                         <td align="left"><font face="Book Antiqua" size="4" color="Green"> Hotel Name : </font> </td>
+                         <td align="center"><input type="text" name="n3"></td>
+                      </tr>   
+                      
+                       <tr>
+                         <td align="left"><font face="Book Antiqua" size="4" color="Green"> No of Rooms : </font> </td>
+                         <td align="center"><input type="number" min="0" name="n4"></td>
+                      </tr>   
+
+                     
+   <!--                 <tr>
+            <td align="left"><font face="Book Antiqua" size="n4" color="Green"> Check-In Date : </font> </td>
+            <td>
+                    <select name="n5">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+    <option value="25">25</option>
+    <option value="26">26</option>
+    <option value="27">27</option>
+    <option value="28">28</option>
+    <option value="29">29</option>
+    <option value="30">30</option>
+   <option value="31">31</option>
+   </select>
+<select name="n6">
+    <option value="Jan">January</option>
+    <option value="Feb">February</option>
+    <option value="Mar">March</option>
+    <option value="Apr">April</option>
+    <option value="May">May</option>
+    <option value="Jun">June</option>
+    <option value="Jul">July</option>
+    <option value="Aug">August</option>
+    <option value="Sep">September</option>
+    <option value="Oct">October</option>
+    <option value="Nov">November</option>
+    <option value="Dec">December</option>
+
+</select>
+<select name="n7"><option value="2016">2016</option>
+</select></td>
+            </tr>
+            <tr>
+            <td align="left"><font face="Book Antiqua" size="n4" color="Green"> Check-Out Date : </font> </td>
+            <td>
+                    <select name="n8">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+    <option value="25">25</option>
+    <option value="26">26</option>
+    <option value="27">27</option>
+    <option value="28">28</option>
+    <option value="29">29</option>
+    <option value="30">30</option>
+   <option value="31">31</option>
+   </select>
+<select name="n9">
+    <option value="Jan">January</option>
+    <option value="Feb">February</option>
+    <option value="Mar">March</option>
+    <option value="Apr">April</option>
+    <option value="May">May</option>
+    <option value="Jun">June</option>
+    <option value="Jul">July</option>
+    <option value="Aug">August</option>
+    <option value="Sep">September</option>
+    <option value="Oct">October</option>
+    <option value="Nov">November</option>
+    <option value="Dec">December</option>
+
+</select>
+<select name="n10"><option value="2016">2016</option>
+</select></td>
+            </tr>-->
+            <tr>
+                         <td align="left"> <font face="Book Antiqua" size="4" color="Green"> Adult: </font> </td>
+                         <td align="center"><input type="number" min="0" name="n11"></td>
+                      </tr>
+                      <tr>
+                         <td align="left"> <font face="Book Antiqua" size="4" color="Green"> Children : </font> </td>
+                         <td align="center"><input type="number" min="0" name="n12"></td>
+                      </tr>
+                      <tr>
+                         <td align="left"> <font face="Book Antiqua" size="4" color="Green"> Actual Fare : </font> </td>
+                         <td align="center"><input type="text" name="n13"></td>
+                      </tr>
+                      <tr>
+                         <td align="left"> <font face="Book Antiqua" size="4" color="Green"> Our Fare : </font> </td>
+                         <td align="center"><input type="text" name="n14"></td>
+                      </tr>
+                       <tr>
+                           <td colspan="2" align="center"><input type="submit" value=" Add "></td> 
+                       </tr>
+
+           </table>
+       
+             
+     </body>
+</html>                          
